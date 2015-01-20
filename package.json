@@ -14,7 +14,13 @@
     "type": "git",
     "url": "https://github.com/johnotander/is-vendor-prefixed.git"
   },
-  "keywords": [],
+  "keywords": [
+    "css",
+    "vendor",
+    "prefix",
+    "prefixes",
+    "vendor-prefixes"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/johnotander/is-vendor-prefixed/issues"

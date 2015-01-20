@@ -13,7 +13,10 @@ npm install --save is-vendor-prefixed
 ## Usage
 
 ```javascript
-// ...
+var isVendorPrefixed('is-vendor-prefixed');
+
+isVendorPrefixed('-webkit-flex-basis');  // => true
+isVendorPrefixed('flex-basis');          // => false
 ```
 
 ## License
