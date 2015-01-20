@@ -1,0 +1,29 @@
+{
+  "name": "is-vendor-prefixed",
+  "description": "Check whether a property is vendor prefixed.",
+  "author": "John Otander",
+  "version": "0.0.1",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnotander/is-vendor-prefixed.git"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnotander/is-vendor-prefixed/issues"
+  },
+  "homepage": "https://github.com/johnotander/is-vendor-prefixed",
+  "dependencies": {
+    "vendor-prefixes": "0.0.1"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
