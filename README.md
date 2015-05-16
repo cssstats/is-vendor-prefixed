@@ -1,6 +1,6 @@
 # is-vendor-prefixed
 
-[![Build Status](https://secure.travis-ci.org/johnotander/is-vendor-prefixed.png?branch=master)](https://travis-ci.org/johnotander/is-vendor-prefixed)
+[![Build Status](https://secure.travis-ci.org/cssstats/is-vendor-prefixed.png?branch=master)](https://travis-ci.org/cssstats/is-vendor-prefixed)
 
 Check whether a property is vendor prefixed.
 
