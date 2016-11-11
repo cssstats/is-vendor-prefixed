@@ -1,7 +1,7 @@
-var assert = require('assert');
-var isVendorPrefixed = require('..');
+import test from 'ava'
+import isVendorPrefixed from './'
 
-var prefixedProperties = [
+const prefixedProperties = [
   '-ms-background-image', 'mso-background-image', // Microsoft
   '-moz-background-image',	                      // Mozilla
   '-o-background-image', '-xv-background-image',  // Opera Software
@@ -15,27 +15,28 @@ var prefixedProperties = [
   '-ro-background-image',                         //	Real Objects
   '-rim-background-image',                        //	Research In Motion
   '-tc-background-image'                          //	TallComponents
-];
+]
 
-var unprefixedProperties = [
+const unprefixedProperties = [
   'background-image',
   'foo-bar',
   '-not-valid-background-image',
   '-mozbackground-image',
   'mox-background-image'
-];
+]
 
-describe('is-vendor-prefixed', function() {
+test('returns true for prefixed properties', t => {
+  t.plan(prefixedProperties.length)
 
-  it('should do return true for prefixed properties', function() {
-    prefixedProperties.forEach(function(property) {
-      assert.ok(isVendorPrefixed(property));
-    });
-  });
+  prefixedProperties.forEach(property => {
+    t.truthy(isVendorPrefixed(property))
+  })
+})
 
-  it('should do return false for unprefixed properties', function() {
-    unprefixedProperties.forEach(function(property) {
-      assert.ok(!isVendorPrefixed(property));
-    });
-  });
-});
+test('returns false for unprefixed properties', t => {
+  t.plan(unprefixedProperties.length)
+
+  unprefixedProperties.forEach(property => {
+    t.falsy(isVendorPrefixed(property))
+  })
+})
